@@ -63,17 +63,32 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex items-center"
+          className="md:hidden flex items-center justify-center p-2"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Закрыть меню" : "Открыть меню"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? (
+            <div className="rounded-full p-2 bg-black">
+              <X size={28} className="text-white" />
+            </div>
+          ) : (
+            <Menu size={24} />
+          )}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-background pt-16 z-40">
+          {/* Extra Close Button at Top-Right for Better Visibility */}
+          <button
+            className="absolute top-4 right-4 p-2 rounded-full bg-black"
+            onClick={toggleMenu}
+            aria-label="Закрыть меню"
+          >
+            <X size={28} className="text-white" />
+          </button>
+
           <nav className="container mx-auto px-4">
             <ul className="flex flex-col space-y-6 items-center text-center pt-10">
               <li>
