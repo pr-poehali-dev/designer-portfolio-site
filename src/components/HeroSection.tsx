@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-8 md:col-start-3">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Мария Петрова
+              Алексей Хотьков
               <span className="block mt-4 text-xl md:text-2xl font-light">
                 / Графический дизайнер
               </span>
