@@ -106,6 +106,15 @@ const PortfolioSection: React.FC = () => {
                     setCurrentImageIndex(0);
                   }}
                 >
+                  {item.id === 3 && (
+                    <div className="mb-4 overflow-hidden rounded-md">
+                      <img
+                        src="https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=800&auto=format&fit=crop"
+                        alt="Декоративное изображение мебели"
+                        className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                   <div className="mb-3 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
                       <img
