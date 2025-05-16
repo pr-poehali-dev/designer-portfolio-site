@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { X } from "lucide-react";
 
@@ -128,9 +133,9 @@ const PortfolioSection: React.FC = () => {
                         <span className="text-sm">{item.year}</span>
                       </div>
                     </div>
-                    <Dialog.Close className="p-1">
+                    <DialogClose className="p-1">
                       <X size={24} />
-                    </Dialog.Close>
+                    </DialogClose>
                   </div>
 
                   <div className="mb-6">
