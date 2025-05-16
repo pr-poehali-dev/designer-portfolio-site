@@ -115,7 +115,7 @@ const PortfolioSection: React.FC = () => {
                       />
                     </div>
                   )}
-                  <div className="mb-3 overflow-hidden">
+                  <div className="overflow-hidden rounded-md mb-1">
                     <AspectRatio ratio={4 / 3}>
                       <img
                         src={item.thumbnail}
@@ -124,7 +124,7 @@ const PortfolioSection: React.FC = () => {
                       />
                     </AspectRatio>
                   </div>
-                  <h3 className="text-xl font-bold">{item.title}</h3>
+                  <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                   <div className="flex justify-between items-center mt-2">
                     <span className="text-sm">{item.category}</span>
                     <span className="text-sm">{item.year}</span>
