@@ -95,6 +95,18 @@
   background-size: 20px 20px;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .service-item {
   display: flex;
   align-items: flex-start;

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {
   Dialog,
@@ -125,6 +126,10 @@ const PortfolioSection: React.FC = () => {
                     </AspectRatio>
                   </div>
                   <h3 className="text-xl font-bold">{item.title}</h3>
+                  <div className="flex justify-between items-center mt-2">
+                    <span className="text-sm">{item.category}</span>
+                    <span className="text-sm">{item.year}</span>
+                  </div>
                 </div>
               </DialogTrigger>
 
