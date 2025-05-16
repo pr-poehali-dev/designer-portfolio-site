@@ -4,7 +4,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-16 dot-pattern relative"
+      className="min-h-screen flex items-center pt-16 relative"
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">

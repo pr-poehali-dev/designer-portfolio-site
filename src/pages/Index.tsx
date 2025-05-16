@@ -10,7 +10,7 @@ import ContactSection from '../components/ContactSection';
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground dot-pattern">
       <Header />
       <main>
         <HeroSection />
